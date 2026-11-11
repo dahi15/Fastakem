@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فاستقم | طريقك إلى الله</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">فاستقم <span>۞</span></a>
+
+   
+<nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="quran.html">القرآن الكريم</a>
+    <a href="morning.html">أذكار الصباح</a>
+    <a href="evening.html">أذكار المساء</a>
+    <a href="#salawat">الصلاة على النبي ﷺ</a>
+</nav>
+ 
+    </nav>
+
+    <a href="quran.html" class="nav-button">ابدأ القراءة</a>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <span class="small-title">منصة إسلامية متكاملة</span>
+
+        <h1>فَاسْتَقِمْ</h1>
+
+        <h2>﴿ فَاسْتَقِمْ كَمَا أُمِرْتَ ﴾</h2>
+
+        <p>
+            اجعل قلبك عامرًا بذكر الله،
+            واجعل القرآن نور طريقك.
+        </p>
+
+        <a href="quran.html" class="main-button">
+            ابدأ رحلتك مع القرآن
+        </a>
+    </div>
+</section>
+
+<section class="welcome">
+    <h2>مرحبًا بك في فاستقم</h2>
+    <p>مساحة إيمانية تجمعك بالقرآن والذكر والدعاء.</p>
+</section>
+
+<section class="services">
+
+    <a href="quran.html" class="service-card featured">
+        <div class="service-icon">📖</div>
+        <h3>القرآن الكريم</h3>
+        <p>اقرأ القرآن الكريم كاملًا.</p>
+        <span>ابدأ القراءة ←</span>
+    </a>
+
+    <a href="morning.html" class="service-card">
+        <div class="service-icon">🌅</div>
+        <h3>أذكار الصباح</h3>
+        <p>ابدأ يومك بذكر الله.</p>
+        <span>اقرأ الأذكار ←</span>
+    </a>
+
+    <a href="evening.html" class="service-card">
+        <div class="service-icon">🌙</div>
+        <h3>أذكار المساء</h3>
+        <p>اختم يومك بذكر الله.</p>
+        <span>اقرأ الأذكار ←</span>
+    </a>
+
+    <a href="#salawat" class="service-card">
+        <div class="service-icon">💚</div>
+        <h3>الصلاة على النبي ﷺ</h3>
+        <p>أكثر من الصلاة والسلام على رسول الله.</p>
+        <span>ابدأ التسبيح ←</span>
+    </a>
+
+    <a href="duas.html" class="service-card">
+        <div class="service-icon">🤲</div>
+        <h3>الأدعية</h3>
+        <p>أدعية متنوعة من القرآن والسنة.</p>
+        <span>تصفح الأدعية ←</span>
+    </a>
+
+</section>
+
+    </a>
+
+    <a href="morning.html" class="service-card">
+
+    </a>
+        <div class="service-icon">📿</div>
+        <h3>الأذكار</h3>
+        <p>أذكار الصباح والمساء وأذكار المسلم.</p>
+        <span>اقرأ الأذكار ←</span>
+    </a>
+
+    <a href="duas.html" class="service-card">
+        <div class="service-icon">🤲</div>
+        <h3>الأدعية</h3>
+        <p>مجموعة من الأدعية الإسلامية المتنوعة.</p>
+        <span>تصفح الأدعية ←</span>
+    </a>
+
+    <a href="#salawat" class="service-card">
+        <div class="service-icon">💚</div>
+        <h3>الصلاة على النبي ﷺ</h3>
+        <p>أكثر من الصلاة والسلام على رسول الله.</p>
+        <span>اكتشف المزيد ←</span>
+    </a>
+
+</section>
+
+<section class="reminder" id="salawat">
+    <h2>﴿ أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ ﴾</h2>
+    <p>اللهم اجعل القرآن ربيع قلوبنا ونور صدورنا.</p>
+</section>
+
+<!-- قسم الصلاة على النبي -->
+<section class="reminder" id="salawat">
+
+    <h2>💚 الصلاة على النبي ﷺ</h2>
+
+    <p>اللهم صلِّ وسلم وبارك على سيدنا محمد ﷺ</p>
+
+    <div class="salawat-counter">
+        <span id="salawatCount">0</span>
+    </div>
+
+    <button type="button" id="salawatButton" class="main-button">
+        صلِّ على النبي ﷺ
+    </button>
+
+    <button type="button" id="resetSalawat" class="reset-button">
+        إعادة العداد
+    </button>
+
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    let count = 0;
+
+    const display = document.getElementById("salawatCount");
+    const button = document.getElementById("salawatButton");
+    const reset = document.getElementById("resetSalawat");
+
+    button.addEventListener("click", function() {
+        count++;
+        display.textContent = count;
+    });
+
+    reset.addEventListener("click", function() {
+        count = 0;
+        display.textContent = count;
+    });
+
+});
+</script>
+
+<footer>
+    <h2>فاستقم ۞</h2>
+    <p>موقع إسلامي لنشر الخير والعلم النافع</p>
+    <p>© 2026 جميع الحقوق محفوظة</p>
+</footer>
+
+</body>
+
+<script>
+const startButton = document.getElementById("startAudio");
+const audio = document.getElementById("welcomeQuran");
+const statusText = document.getElementById("audioStatus");
+
+startButton.addEventListener("click", async function() {
+
+    startButton.disabled = true;
+    statusText.textContent = "جاري تجهيز التلاوة...";
+
+    try {
+        if (!audio.src) {
+            const response = await fetch(
+                "https://api.alquran.cloud/v1/ayah/1:1/ar.alafasy"
+            );
+
+            const result = await response.json();
+
+            if (result.code !== 200 || !result.data.audio) {
+                throw new Error("Audio unavailable");
+            }
+
+            audio.src = result.data.audio;
+        }
+
+        await audio.play();
+
+        startButton.textContent = "التلاوة تعمل الآن 🎧";
+        statusText.textContent = "استمع بتدبر وخشوع";
+
+        audio.onended = function() {
+            startButton.disabled = false;
+            startButton.textContent = "إعادة الاستماع";
+        };
+
+    } catch (error) {
+        statusText.textContent =
+            "تعذر تشغيل التلاوة، تحقق من الإنترنت وحاول مجددًا.";
+
+        startButton.disabled = false;
+    }
+
+});
+</script>
+
+<section class="welcome-audio" id="welcomeAudioSection">
+
+    <h1>أهلًا بك في فاستقم ۞</h1>
+
+    <p class="welcome-ayah">
+        ﴿ فَاسْتَقِمْ كَمَا أُمِرْتَ ﴾
+    </p>
+
+    <p>ابدأ رحلتك بذكر الله وتلاوة القرآن الكريم</p>
+
+    <button id="startAudio">
+        ▶ ابدأ واستمع للقرآن الكريم
+    </button>
+
+    <audio id="welcomeQuran" preload="none"></audio>
+
+    <p id="audioStatus"></p>
+
+</section>
+
+</html>
+<a href="evening.html">أذكار المساء</a>
+<a href="duas.html">الأدعية</a>

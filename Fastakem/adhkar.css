@@ -1,0 +1,159 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background: #f7f5ed;
+    color: #174b38;
+}
+
+header {
+    background: #103c2e;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #e4c47b;
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 18px;
+}
+
+.intro {
+    background: linear-gradient(135deg, #103c2e, #28634a);
+    color: white;
+    text-align: center;
+    padding: 55px 15px;
+    border-radius: 20px;
+}
+
+.intro h1 {
+    color: #e4c47b;
+    font-size: 36px;
+    margin: 12px;
+}
+
+.intro p {
+    line-height: 2;
+}
+
+.moon {
+    font-size: 42px;
+}
+
+.progress-box {
+    background: white;
+    padding: 22px;
+    margin: 25px 0;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.progress {
+    background: #e5e5e5;
+    height: 12px;
+    border-radius: 20px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #d6b56d;
+    transition: width .3s;
+}
+
+.dhikr-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px #0000000b;
+}
+
+.dhikr-card p {
+    font-size: 21px;
+    line-height: 2.2;
+    text-align: center;
+}
+
+.dhikr-card small {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #777;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    border: none;
+    padding: 12px 22px;
+    margin-top: 18px;
+    border-radius: 25px;
+    background: #174b38;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+button:hover {
+    background: #d6b56d;
+    color: #103c2e;
+}
+
+.completed {
+    border: 2px solid #4b936b;
+    background: #f0f8f1;
+}
+
+.reset {
+    display: block;
+    margin: 30px auto;
+    background: #795548;
+}
+
+footer {
+    text-align: center;
+    background: #09291f;
+    color: white;
+    padding: 25px;
+}
+
+.evening-intro {
+    background: linear-gradient(135deg, #102c35, #24534d);
+}
+
+@media(max-width:600px) {
+    .intro h1 {
+        font-size: 29px;
+    }
+
+    .dhikr-card p {
+        font-size: 18px;
+    }
+}
